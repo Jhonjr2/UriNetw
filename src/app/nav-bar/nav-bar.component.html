@@ -1,0 +1,25 @@
+<header class="header">
+    <nav class="header_nav">
+        <img class="img_logo" src="../../assets/logo1.png" alt="logo">
+        <button class="menu_button" (click)="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="header_list" [ngClass]="{ 'show': isMenuOpen }">
+            <li class="link" (click)="toHome()"><a>Inicio</a></li>
+            <li class="link" (click)="toHistory()"><a>Historia</a></li>
+            <li class="link" (click)="toTeaching()"><a>Enseñanza</a></li>
+            <li class="link" (click)="toRelatos()"><a>Relatos</a></li>
+            <li class="link" (click)="toInvitacion()"><a>Invitación</a></li>
+            <li class="link" (click)="toContacto()"><a>Contacto</a></li>
+        </ul>
+        <div class="icon_wpp">
+          <a href="https://api.whatsapp.com/send?phone=3135275805&text=¡Hola%20Sr. Uriel!%20Vi%20su%20página%20web%20y%20quiero%20saber%20cómo%20emprender%20y%20formar%20parte%20de%20tu%20equipo,%20mi%20nombre%20es...%20"
+          target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </nav>
+</header>

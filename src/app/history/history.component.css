@@ -1,0 +1,158 @@
+.Section_history {
+  max-width: 100%;
+  min-height: 110vh;
+  padding: 10% 40px 40px;
+  margin-top: -12%;
+  z-index: 1;
+  background-image: url('../../assets/fondo_history.png');
+  background-size: cover;
+  position: relative;
+}
+
+.history_info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+}
+
+.history_img {
+  width: 70%;
+  margin-top: -10%;
+  mask-image: linear-gradient(black 75%, transparent);
+}
+
+.history_title {
+  color: #33A3E5;
+  font-size: 42px;
+}
+
+.history_title span {
+  color: white;
+}
+
+.history_text {
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+  max-width: 40%;
+
+}
+
+.history_text_parraf {
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+  max-width: 95%;
+  text-align: justify;
+  text-shadow: 1px 2px 3px black;
+  line-height: 1.8;
+}
+
+.history_btn {
+  width: 150px;
+  height: 50px;
+  background-color: #38B6FF;
+  border: none;
+  border-radius: 50px;
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  transition: transform .3s ease;
+  align-items: center;
+}
+
+.history_btn:hover {
+  transform: scale(1.2);
+  filter: brightness(1.1);
+}
+
+.btn_more {
+  position: absolute;
+  top: 86.5%;
+  left: 77%;
+  background-color: transparent;
+  color: #33A3E5;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.right-position {
+  position: absolute;
+  left: 90%;
+  top: 91%;
+  font-size: 17px;
+  font-weight: 800;
+  color: #38a1dd;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .Section_history {
+    max-width: 100%;
+    min-height: 110vh;
+    margin-top: 100px;
+    padding: 20px;
+
+  }
+
+
+  .history_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .history_img {
+    max-width: 60%;
+    margin-left: 50px;
+
+  }
+
+  .history_info_text {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .history_title {
+    font-size: 32px;
+    max-width: none;
+
+  }
+
+  .history_text,
+  .history_text_parraf {
+    font-size: 16px;
+    text-align: center;
+    text-align: justify;
+  }
+
+  .history_btn {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+
+  }
+
+  .btn_more {
+    position: absolute;
+    top: 91.6%;
+    left: 28%;
+
+  }
+
+  .right-position {
+    position: absolute;
+    left: 37%;
+    top: 94%;
+    font-size: 16px;
+  }
+
+
+}

@@ -1,0 +1,18 @@
+<article class="Section_history">
+  <div class="history_info">
+    <div class="circulo">
+      <img class="history_img" src="../../assets/foto-section2.png" alt="foto">
+    </div>
+    <div [ngClass]= "{mostrarMas}" class="history_info_text">
+      <p class="history_text_parraf">{{ mostrarMas ? textoInicial  : textoCompleto  }}</p>
+      <button class="btn_more"  [ngClass]= "{'right-position': botonPosicionDerecha}" (click)="toggleMostrarMas()">
+        {{ mostrarMas ? 'Leer mas' : 'Leer menos' }}
+      </button>
+      <a href="https://api.whatsapp.com/send?phone=3135275805&text=¡Hola%20Sr. Uriel!%20Vi%20su%20página%20web%20y%20quiero%20saber%20cómo%20emprender%20y%20formar%20parte%20de%20tu%20equipo,%20mi%20nombre%20es...%20"
+        target="_blank">
+        <button class="history_btn">Conversémos</button>
+      </a>
+    </div>
+
+  </div>
+</article>

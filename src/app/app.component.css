@@ -1,0 +1,28 @@
+.home {
+  background-color: #184BFF;
+}
+
+.btn {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.455);
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+  z-index: 10;
+}
+
+.btn.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.fa-solid {
+  font-size: 25px;
+  color:#ffffff ;
+}

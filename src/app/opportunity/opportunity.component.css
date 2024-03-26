@@ -1,0 +1,76 @@
+.history {
+  max-width: 100%;
+  max-height: 20%;
+  padding: 40px;
+  background-image: url('../../assets/fondo-seccion2.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+
+.container_cards {
+  max-width: 100%;
+  display: flex;
+  gap: 5em;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
+.card1 {
+  width: 30%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  box-shadow: 1px 2px 6px rgba(183, 222, 254, 0.207);
+}
+
+.icon {
+  background: linear-gradient(to bottom, rgba(153, 148, 148, 0.85), #bbb , #888, #555, black);
+  padding: 10px;
+  border-radius: 40px;
+  border: 1px solid #38b6ff94;
+}
+
+.fa-solid {
+  background-image: linear-gradient(to bottom, #167cb6, rgba(255, 255, 255, 0.696));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 25px;
+}
+
+.text_card {
+  max-width: 85%;
+  text-align: center;
+  font-size: 1vw
+}
+
+.hablemos_btn {
+  font-size: 12px;
+  color: #38B6FF;
+}
+
+@media screen and (max-width: 768px) {
+  .container_cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text_card {
+    font-size: 12px;
+  }
+
+  .card1 {
+    width: 60%;
+  }
+
+}

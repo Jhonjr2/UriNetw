@@ -1,0 +1,74 @@
+.teaching {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-image: url('../../assets/teaching_fondo.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.acordeon__container {
+  border: 1px solid;
+  margin: 50px auto;
+  width: fit-content;
+  padding: 40px;
+  border-radius: 20px;
+  color: white;
+  background-image: linear-gradient(to bottom, rgba(38, 112, 112, 0.5), rgba(0, 0, 0, 0.8))
+}
+
+.acordeon__divisor {
+  background-color: white;
+  height: 2px;
+  width: 275px;
+  padding: 0 12px;
+}
+
+.acordeon__title {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.35rem;
+  font-weight: 700;
+  width: 350px;
+  margin: 15px 0;
+  transition: 0.35s;
+}
+
+.acordeon__title::after {
+  content: '';
+  background: url('../../assets/Boton-Desplegar.png')no-repeat;
+  background-size: contain;
+  width: 25px;
+  aspect-ratio: 1;
+  transform: rotate(90deg);
+  transition: 0.35s;
+}
+.acordeon__wrapper {
+  padding-left: 25px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.acordeon__trigger:checked
+  ~ .acordeon__wrapper {
+  max-height: 350px;
+  margin-bottom: 25px;
+}
+.acordeon__trigger:checked
+  ~ .acordeon__title::after {
+  transform: rotate(-45deg);
+  transition: 0.5s;
+}
+.acordeon__trigger {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .acordeon__container {
+    max-width: 70%;
+  }
+}

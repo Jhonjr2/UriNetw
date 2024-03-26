@@ -1,0 +1,26 @@
+.invitation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 110px;
+}
+
+.text {
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+}
+
+video {
+  width: 90% ;
+}
+
+@media screen and (max-width: 800px) {
+  .invitation {
+      font-size: 13px;
+      padding: 50px;
+      margin-bottom: 10px;
+      padding-top: 80px;
+  }
+}

@@ -107,6 +107,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
   }
 
   .history_img {
@@ -142,15 +143,15 @@
 
   .btn_more {
     position: absolute;
-    top: 91.6%;
-    left: 28%;
+    top: 91.8%;
+    left: 32%;
 
   }
 
   .right-position {
     position: absolute;
-    left: 37%;
-    top: 94%;
+    left: 72%;
+    top: 94.4%;
     font-size: 16px;
   }
 

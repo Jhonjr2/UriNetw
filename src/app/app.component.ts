@@ -9,6 +9,7 @@ import { InvitacionComponent } from './invitacion/invitacion.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { RelatoComponent } from './relato/relato.component';
+import { ParallaxComponent } from './parallax/parallax.component';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,8 @@ import { RelatoComponent } from './relato/relato.component';
     InvitacionComponent,
     ContactComponent,
     FooterComponent,
-    RelatoComponent
+    RelatoComponent,
+    ParallaxComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

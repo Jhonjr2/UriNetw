@@ -71,4 +71,9 @@
   .acordeon__container {
     max-width: 70%;
   }
+
+  .acordeon__title {
+    width: 250px;
+  }
+
 }

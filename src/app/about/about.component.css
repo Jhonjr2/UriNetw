@@ -71,10 +71,6 @@
     padding-top: 90px;
   }
 
-  .app_fondo {
-    padding-bottom: 50%;
-  }
-
 
   .About_info {
     display: flex;
@@ -90,22 +86,20 @@
   }
 
   .About_info_text {
-    text-align: center;
     margin-top: 30px;
   }
 
   .About_title {
-    font-size: 32px;
-    max-width: none;
-    max-width: 95%;
-
+    font-size: 28px;
+    text-align: center;
+    margin-right: 10%;
   }
 
   .About_text,
   .About_text_parraf {
     font-size: 16px;
-    margin-left: 35px;
     text-align: center;
+    padding-left: 5%;
   }
 
   .About_btn {
@@ -113,7 +107,7 @@
     height: 40px;
     font-size: 16px;
     margin-bottom: 50px;
-    margin-right: 25px;
+    margin-left: 65%;
 
   }
 }

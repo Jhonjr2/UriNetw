@@ -1,0 +1,40 @@
+.parallax{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:25rem;
+	max-width: 100%;
+	position: relative
+}
+
+.texto-interior{
+	color:black;
+	font-size: 2rem;
+	font-weight: bold;
+	left: 10%;
+	position: absolute;
+	text-align: center;
+	top:20%;
+	width: 80%;
+  text-shadow: 1px 2px 3px #1e5fba6d;
+}
+
+.img-tres{
+  background-image:url("../../assets/fondo_parallax.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 968px) {
+  .texto-interior{
+    font-size: 18px;
+    top: 14%;
+  }
+
+  .parallax{
+    height: 15rem;
+  }
+}
+
+

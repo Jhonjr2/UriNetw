@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Renderer2 } from '@angular/core';
 import Swiper from 'swiper';
 import { SwiperOptions } from 'swiper/types/swiper-options';
 
@@ -16,10 +16,10 @@ interface CustomSwiperOptions extends SwiperOptions {
 })
 export class RelatoComponent implements AfterViewInit {
 
-  constructor() { }
+  constructor(private renderer: Renderer2, private elementRef: ElementRef) { }
 
   ngAfterViewInit(): void {
-    const gallery = document.querySelector('.gallery');
+    const gallery = this.elementRef.nativeElement.querySelector('.gallery');
 
     function moveSlide(e: MouseEvent) {
       const slides = document.querySelectorAll('.slide');
@@ -32,6 +32,6 @@ export class RelatoComponent implements AfterViewInit {
       }
     }
 
-    document.addEventListener('click', moveSlide, false);
+    this.renderer.listen('document', 'click', moveSlide);
   }
 }

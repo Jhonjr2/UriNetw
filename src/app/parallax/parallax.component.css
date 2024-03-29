@@ -29,7 +29,7 @@
 @media screen and (max-width: 968px) {
   .texto-interior{
     font-size: 18px;
-    top: 14%;
+    margin-top: -15%;
   }
 
   .parallax{

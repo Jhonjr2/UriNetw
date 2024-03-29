@@ -10,7 +10,6 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { RelatoComponent } from './relato/relato.component';
 import { ParallaxComponent } from './parallax/parallax.component';
-import { AnimacionComponent } from './animacion/animacion.component';
 
 @Component({
   selector: 'app-root',
@@ -27,7 +26,6 @@ import { AnimacionComponent } from './animacion/animacion.component';
     FooterComponent,
     RelatoComponent,
     ParallaxComponent,
-    AnimacionComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

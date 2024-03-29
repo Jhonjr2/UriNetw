@@ -68,7 +68,7 @@
 @media screen and (max-width: 768px) {
 
   .Section_About {
-    padding-top: 90px;
+    padding-top: 75px;
   }
 
 
@@ -107,8 +107,19 @@
     height: 40px;
     font-size: 16px;
     margin-bottom: 50px;
-    margin-left: 65%;
+    margin-left: 58%;
 
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .Section_About {
+    padding-top: 25%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .Section_About {
+    padding-top: 55%;
   }
 }
 
